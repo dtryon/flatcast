@@ -19,7 +19,7 @@ var config = {
                 test: /\.css?$/,
                 exclude: /node_modules/,
                 loaders: ['style', 'css'],
-                include: [__dirname + '/styles/']
+                include: [__dirname + '/src/styles/']
             }
         ]
     },
