@@ -1,7 +1,7 @@
 import {createStore, compose, combineReducers, applyMiddleware} from 'redux';
 import thunk from 'redux-thunk';
 
-const reducer = (state, action) => state;
+import reducer from './reducers/flatCast';
 
 const createStoreWithMiddleware = compose(
     applyMiddleware(thunk),

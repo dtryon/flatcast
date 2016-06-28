@@ -2,13 +2,13 @@ import React from 'react';
 import { expect } from 'chai';
 import { renderIntoDocument } from 'react-addons-test-utils';
 
-import FlatCast from './FlatCast';
+import { FlatCast } from './FlatCast';
 
 describe('FlatCast Component', () => {
 
     it('should cleanly render', () => {
 
-        const component = renderIntoDocument(<FlatCast />);
+        const component = renderIntoDocument(<FlatCast init={()=>{}}/>);
 
         expect(component).to.not.be.undefined;
 

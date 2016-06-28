@@ -43,8 +43,13 @@
     .FlatCast_day {
         background-color: #7F8C8D;
         height: 200px;
-        margin-right: 20px;
         padding: 20px;
+        border-right: 10px solid #2C3E50;
+        min-width: 12em;
+    }
+
+    .FlatCast_day:last-child {
+        border-right: none;
     }
 
     .FlatCast_day_name {
@@ -52,7 +57,7 @@
         text-align: center;
         color: #F1C40F;
         text-transform: uppercase;
-        font-size: 2em;
+        font-size: 1.3em;
         font-weight: 100;
         letter-spacing: 3px;
     }
@@ -79,8 +84,17 @@
     .FlatCast_hour {
         background-color: #B8C7C8;
         height: 350px;
-        margin-right: 20px;
-        padding: 15px;
+        padding: 10px;
+        border-right: 15px solid #95A5A6;
+        min-width: 7em;
+        margin-bottom: 3px;
+    }
+
+    .FlatCast_hour_time {
+        color: #34495E;
+        text-align: center;
+        font-size: 0.9em;
+        line-height: 1.6em;
     }
 
     .FlatCast_hour_weather {
@@ -92,16 +106,17 @@
 
     .FlatCast_hour_temp {
         color: #34495E;
-        font-size: 2em;
+        font-size: 1.2em;
         text-align: center;
         line-height: 1.5em;
+        margin-bottom: 20px;
     }
 
     .FlatCast_hour_temp_hilo {
         color: #34495E;
-        font-size: 1.3em;
-        text-align: right;
-        margin-bottom: 100px;
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 90px;
     }
 
     .FlatCast_hour_wind_direction {
@@ -117,6 +132,4 @@
         text-align: center;
         line-height: 1.4em;
     }
-
-
 }
