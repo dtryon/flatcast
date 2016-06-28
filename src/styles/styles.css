@@ -9,3 +9,7 @@
 /*
  * other imports
  */
+
+@import './weather/weather-icons.min.css';
+@import './weather/weather-icons-wind.min.css';
+

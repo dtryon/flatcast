@@ -16,6 +16,10 @@ var config = {
                 loader: 'react-hot!babel'
             },
             {
+                test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+                loader : 'file-loader'
+            },
+            {
                 test: /\.css?$/,
                 exclude: /node_modules/,
                 loaders: ['style', 'css'],

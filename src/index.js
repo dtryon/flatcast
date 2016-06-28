@@ -7,7 +7,10 @@ import store from './store';
 
 ReactDOM.render(
     <Provider store={store}>
-        <div>hello</div>
+        <div>
+            <p>hello</p>
+            <i style={{fontSize:'4rem'}} className="wi wi-wind towards-23-deg"></i>
+        </div>
     </Provider>,
     document.getElementById('app')
 );
