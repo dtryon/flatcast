@@ -1,6 +1,6 @@
 import React from 'react';
 import { expect } from 'chai';
-import { renderIntoDocument } from 'react-addons-test-utils';
+import { mount } from 'enzyme';
 
 import { FlatCast } from './FlatCast';
 
@@ -8,9 +8,42 @@ describe('FlatCast Component', () => {
 
     it('should cleanly render', () => {
 
-        const component = renderIntoDocument(<FlatCast init={()=>{}}/>);
+        const component = mount(<FlatCast init={()=>{}}/>);
 
         expect(component).to.not.be.undefined;
+    });
 
+    it('should render days', () => {
+        const days = {'Monday': { temp: 23, weather: 400}, 'Tuesday': { temp: 32, weather: 500}};
+        const component = mount(<FlatCast init={()=>{}} days={days}/>);
+
+        const result = component.find('.FlatCast_day');
+        expect(result.length).to.equal(2);
+    });
+
+    it('should render days name', () => {
+        const days = {'Monday': { temp: 23, weather: 400}, 'Tuesday': { temp: 32, weather: 500}};
+        const component = mount(<FlatCast init={()=>{}} days={days}/>);
+
+        const result = component.find('.FlatCast_day_name');
+        expect(result.length).to.equal(2);
+        expect(result.first().text()).to.equal('Monday');
+    });
+
+    it('should render days weather', () => {
+        const days = {'Monday': { temp: 23, weather: 400}, 'Tuesday': { temp: 32, weather: 500}};
+        const component = mount(<FlatCast init={()=>{}} days={days}/>);
+
+        const result = component.find('.FlatCast_day_weather i')
+        expect(result.first().hasClass('wi-owm-day-400')).to.be.true;
+    });
+
+    it('should render days temp', () => {
+        const days = {'Monday': { temp: 23, weather: 400}, 'Tuesday': { temp: 32, weather: 500}};
+        const component = mount(<FlatCast init={()=>{}} days={days}/>);
+
+        const result = component.find('.FlatCast_day_temp');
+        expect(result.length).to.equal(2);
+        expect(result.first().text()).to.contain('23');
     });
 });
