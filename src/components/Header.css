@@ -1,0 +1,39 @@
+/*
+ *
+ * FlatCast Header
+ *
+ */
+
+.FlatCast_header {
+    background-color: #34495E;
+    height: 85px;
+    padding: 0 20px;
+}
+
+.FlatCast_header h1 {
+    color: #F39C12;
+    font-size: 2.7em;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 10px;
+    line-height: 85px;
+}
+
+@media (min-width: 34em) {
+    .FlatCast_header {
+        background-color: #34495E;
+        height: 85px;
+        padding: 0 70px;
+    }
+
+    .FlatCast_header h1 {
+        color: #F39C12;
+        font-size: 3.7em;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: 20px;
+        line-height: 85px;
+    }
+}

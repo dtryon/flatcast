@@ -14,3 +14,11 @@
 @import './weather/weather-icons.min.css';
 @import './weather/weather-icons-wind.min.css';
 
+
+/*
+ * compoent imports
+ */
+
+@import '../components/Header.css';
+@import '../components/FlatCast.css';
+
