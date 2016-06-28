@@ -1,0 +1,143 @@
+/*
+ * simple grids
+ */
+
+.grid {
+   position: relative;
+   margin: 0 auto;
+   width: 100%;
+}
+
+.grid-col {
+   position: relative;
+   margin: 0 auto;
+   width: 100%;
+}
+
+.grid-row:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
+.grid-col-xs-1 {
+   width: 8.33333%;
+   float: left;
+}
+
+.grid-col-xs-2 {
+   width: 16.66666%;
+   float: left;
+}
+
+.grid-col-xs-3 {
+   width: 24.99999%;
+   float: left;
+}
+
+.grid-col-xs-4 {
+   width: 33.33333%;
+   float: left;
+}
+
+.grid-col-xs-5 {
+   width: 41.66666%;
+   float: left;
+}
+
+.grid-col-xs-6 {
+   width: 49.99999%;
+   float: left;
+}
+
+.grid-col-xs-7 {
+   width: 58.33333%;
+   float: left;
+}
+
+.grid-col-xs-8 {
+   width: 66.66666%;
+   float: left;
+}
+
+.grid-col-xs-9 {
+   width: 74.99999%;
+   float: left;
+}
+
+.grid-col-xs-10 {
+   width: 83.33333%;
+   float: left;
+}
+
+.grid-col-xs-11 {
+   width: 91.66666%;
+   float: left;
+}
+
+.grid-col-xs-11 {
+   width: 100%;
+   float: left;
+}
+
+@media (min-width: 34em) {
+   .grid-col-md-1 {
+      width: 8.33333%;
+      float: left;
+   }
+
+   .grid-col-md-2 {
+      width: 16.66666%;
+      float: left;
+   }
+
+   .grid-col-md-3 {
+      width: 24.99999%;
+      float: left;
+   }
+
+   .grid-col-md-4 {
+      width: 33.33333%;
+      float: left;
+   }
+
+   .grid-col-md-5 {
+      width: 41.66666%;
+      float: left;
+   }
+
+   .grid-col-md-6 {
+      width: 49.99999%;
+      float: left;
+   }
+
+   .grid-col-md-7 {
+      width: 58.33333%;
+      float: left;
+   }
+
+   .grid-col-md-8 {
+      width: 66.66666%;
+      float: left;
+   }
+
+   .grid-col-md-9 {
+      width: 74.99999%;
+      float: left;
+   }
+
+   .grid-col-md-10 {
+      width: 83.33333%;
+      float: left;
+   }
+
+   .grid-col-md-11 {
+      width: 91.66666%;
+      float: left;
+   }
+
+   .grid-col-md-12 {
+      width: 100%;
+      float: left;
+   }
+}

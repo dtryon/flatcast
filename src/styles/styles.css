@@ -5,6 +5,7 @@
 @import './base/reset.css';
 @import './base/fonts.css';
 @import './base/base.css';
+@import './base/grid.css';
 
 /*
  * other imports
