@@ -9,7 +9,11 @@
     margin-bottom: 200px;
 }
 
-.FlatCast h2 {
+.FlatCast_city {
+    min-width: 250px;
+}
+
+.FlatCast_city_value {
     color: #F39C12;
     font-size: 1.7;
     text-transform: uppercase;
@@ -17,6 +21,36 @@
     letter-spacing: 10px;
     padding: 20px;
     margin-bottom: 35px;
+}
+
+.FlatCast_city_input {
+    box-shadow: none;
+    border: none;
+    background-color: #CECECE;
+    color: #34495E;
+    line-height: 2em;
+    padding: 0 15px;
+    font-size: 2em;
+    min-width: 300px;
+    margin-bottom: 5px;
+}
+
+.FlatCast_city_submit {
+    padding: 0 30px;
+    margin: 0;
+    border: none;
+    background-color: #7F8C8D;
+    height: 2em;
+    font-size: 2em;
+    transition: opacity 0.3s linear;
+    color: #CFCFCF;
+    margin-bottom: 5px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.FlatCast_city_submit:hover {
+    opacity: 0.8;
 }
 
 
@@ -28,14 +62,14 @@
         padding: 30px 70px;
     }
 
-    .FlatCast h2 {
-        color: #F39C12;
-        font-size: 3.7em;
-        text-transform: uppercase;
-        font-weight: 100;
-        letter-spacing: 10px;
-        padding: 0;
-        margin: 15px 0;
+    .FlatCast_city {
+        min-width: 400px;
+    }
+
+    .FlatCast_city_value {
+        font-size: 3em;
+        padding: 15px 0;
+        margin: 0;
     }
 }
 
