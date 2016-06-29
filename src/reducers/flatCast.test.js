@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import freeze from 'deep-freeze';
 
-import reducer, { getSelectedDay, getDays } from './flatCast';
+import reducer, { getSelectedDay, getDays, getCity } from './flatCast';
 import * as actions from '../actions/fiveDay';
 
 describe('flatcast state reducers and selectors', () => {
@@ -210,6 +210,13 @@ describe('flatcast state reducers and selectors', () => {
             const target = getDays(testResponse);
 
             expect(target['Friday'].hours[0].windDirection).to.equal(0);
+        });
+
+        it('should get city', () => {
+
+            const target = getCity({ flatCast: { city: { name: 'blah', country: 'foo' }}});
+
+            expect(target).to.equal('blah - foo');
         });
     });
 });

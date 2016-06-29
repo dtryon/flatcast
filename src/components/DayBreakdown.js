@@ -16,9 +16,9 @@ export default class DayBreakdown extends React.Component {
                 const activeClass = selectedDay === day ? 'active' : '';
                 return <div key={'day'+i} className={"FlatCast_day grid-col-xs-12 grid-col-md-2" + " " + activeClass}
                     onClick={() => this.props.selectDay(day)}>
-                    <p className="FlatCast_day_name">
+                    <h3 className="FlatCast_day_name">
                         { day }
-                    </p>
+                    </h3>
                     <p className="FlatCast_day_weather">
                         <i className={"wi wi-owm-day-" + days[day].weather}></i>
                     </p>

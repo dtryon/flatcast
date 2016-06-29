@@ -28,6 +28,12 @@ export default (state = {}, action = {}) => {
     }
 }
 
+export const getCity = (state) => {
+    if (state.flatCast && state.flatCast.city) {
+        return state.flatCast.city.name + ' - ' + state.flatCast.city.country;
+    }
+}
+
 export const getSelectedDay = (state) => {
     if (state.selectedDay) {
         return state.selectedDay;
