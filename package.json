@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-start",
+  "name": "flatcast",
   "version": "1.0.0",
-  "description": "",
+  "description": "5 day weather forecast",
   "main": "src/index.js",
   "dependencies": {
     "babel-polyfill": "^6.9.1",
@@ -43,12 +43,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dtryon/react-redux-start.git"
+    "url": "git+https://github.com/dtryon/flatcast.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dtryon/react-redux-start/issues"
+    "url": "https://github.com/dtryon/flatcast/issues"
   },
-  "homepage": "https://github.com/dtryon/react-redux-start#readme"
+  "homepage": "https://github.com/dtryon/flatcast#readme"
 }

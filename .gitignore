@@ -11,3 +11,5 @@ node_modules
 client.bundle.js
 client.bundle.css
 *.map
+
+dist/assets
