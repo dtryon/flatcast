@@ -1,0 +1,47 @@
+/*
+ * DayBreakdown
+ */
+
+.FlatCast_day.active {
+    background-color: #95A5A6;
+}
+
+@media (min-width: 34em) {
+
+    .FlatCast_day {
+        background-color: #7F8C8D;
+        height: 200px;
+        padding: 20px;
+        border-right: 10px solid #2C3E50;
+        min-width: 12em;
+        cursor: pointer;
+    }
+
+    .FlatCast_day:last-child {
+        border-right: none;
+    }
+
+    .FlatCast_day_name {
+        line-height: 30px;
+        text-align: center;
+        color: #F1C40F;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        font-weight: 100;
+        letter-spacing: 3px;
+    }
+
+    .FlatCast_day_weather {
+        color: #F1C40F;
+        line-height: 2em;
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    .FlatCast_day_temp {
+        color: #F1C40F;
+        line-height: 1em;
+        font-size: 2.5em;
+        text-align: center;
+    }
+}

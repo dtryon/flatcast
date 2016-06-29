@@ -21,4 +21,6 @@
 
 @import '../components/Header.css';
 @import '../components/FlatCast.css';
+@import '../components/DayBreakdown.css';
+@import '../components/HourBreakdown.css';
 
