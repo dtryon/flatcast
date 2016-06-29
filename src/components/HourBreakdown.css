@@ -2,63 +2,67 @@
  * HourBreakdown
  */
 
+.FlatCast_hours {
+    background-color: #95A5A6;
+    padding: 25px;
+}
+
+.FlatCast_hour {
+    background-color: #B8C7C8;
+    height: 350px;
+    padding: 10px;
+    border-right: 15px solid #95A5A6;
+    min-width: 7em;
+    margin-bottom: 3px;
+}
+
+.FlatCast_hour_time {
+    color: #34495E;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+.FlatCast_hour_weather {
+    color: #34495E;
+    font-size: 2.5em;
+    line-height: 2em;
+    text-align: center;
+}
+
+.FlatCast_hour_temp {
+    color: #34495E;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.FlatCast_hour_temp_hilo {
+    color: #34495E;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.FlatCast_hour_wind_direction {
+    color: #34495E;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1em;
+}
+
+.FlatCast_hour_wind_speed {
+    color: #34495E;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.4em;
+}
+
 
 @media (min-width: 34em) {
 
     .FlatCast_hours {
-        background-color: #95A5A6;
         padding: 35px;
-    }
-
-    .FlatCast_hour {
-        background-color: #B8C7C8;
-        height: 350px;
-        padding: 10px;
-        border-right: 15px solid #95A5A6;
-        min-width: 7em;
-        margin-bottom: 3px;
-    }
-
-    .FlatCast_hour_time {
-        color: #34495E;
-        text-align: center;
-        font-size: 0.9em;
-        line-height: 1.6em;
-    }
-
-    .FlatCast_hour_weather {
-        color: #34495E;
-        font-size: 2.5em;
-        line-height: 2em;
-        text-align: center;
-    }
-
-    .FlatCast_hour_temp {
-        color: #34495E;
-        font-size: 1.2em;
-        text-align: center;
-        line-height: 1.5em;
-        margin-bottom: 20px;
-    }
-
-    .FlatCast_hour_temp_hilo {
-        color: #34495E;
-        font-size: 1em;
-        text-align: center;
-        margin-bottom: 90px;
-    }
-
-    .FlatCast_hour_wind_direction {
-        color: #34495E;
-        font-size: 3em;
-        text-align: center;
-        line-height: 1em;
-    }
-
-    .FlatCast_hour_wind_speed {
-        color: #34495E;
-        font-size: 1em;
-        text-align: center;
-        line-height: 1.4em;
     }
 }

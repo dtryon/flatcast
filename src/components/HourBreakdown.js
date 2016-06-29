@@ -15,11 +15,7 @@ export default class HourBreakdown extends React.Component {
         return  <div className="FlatCast_hours grid-col-md-12 grid">
                     <div className="grid-row">
                         { hours.map((hour, i) => {
-                            let mdColClass = 'grid-col-md-1';
-                            if (i > 3) {
-                                mdColClass = 'grid-col-md-1';
-                            }
-                            return <div key={'hour'+i} className={"FlatCast_hour grid-col-xs-12 " + mdColClass}>
+                            return <div key={'hour'+i} className="FlatCast_hour grid-col-xs-1">
                                 <p className="FlatCast_hour_time">
                                     { hour.time.format('LT')}
                                 </p>
