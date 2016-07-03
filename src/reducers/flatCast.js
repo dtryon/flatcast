@@ -22,7 +22,18 @@ export default (state = {}, action = {}) => {
             return {
                 ...state,
                 selectedDay: action.selectedDay
-            }
+            };
+        case 'FLATCAST_CITY_CHANGED':
+            return {
+                ...state,
+                city: action.city
+            };
+        case 'FLATCAST_CITY_CHANGED_FAILED':
+            return {
+                ...state,
+                city: action.city,
+                errorMessage: action.errorMessage
+            };
         default:
             return state;
     }

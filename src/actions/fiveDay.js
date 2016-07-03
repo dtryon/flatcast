@@ -10,6 +10,7 @@ export const getForecastForCity = (city) => {
         try {
             const response = await fetchForecaseForCity(city);
             dispatch(forecastForCityRecieved(response));
+            dispatch(cityChanged(city));
         } catch(err) {
             dispatch(forecastForCityFailed(err));
         }
@@ -34,6 +35,28 @@ export const selectDay = (selectedDay) => {
     return {
         type: 'FLATCAST_DAY_SELECTED',
         selectedDay
-    }
+    };
 }
 
+export const cityChanged = (city) => {
+    return {
+        type: 'FLATCAST_CITY_CHANGED',
+        city
+    };
+};
+
+export const cityChangedFailed = (city, errorMessage) => {
+    return {
+        type: 'FLATCAST_CITY_CHANGED_FAILED',
+        city,
+        errorMessage
+    };
+};
+
+export const changeCity = (city) => {
+    // check validation
+    if (city.length >= 5) {
+        return getForecastForCity(city);
+    }
+    return cityChangedFailed(city);
+}

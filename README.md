@@ -36,6 +36,8 @@ And the `getDays` selector is doing a bit too much.
 The responsive styles are very basic.  But it should be usable on a mobile (around 400px width).
 I planned to do a bit better mobile sized styling, but ran out of time.
 
+Also, the build (`npm run build`) still builds a dev version.
+
 #### All this considered...
 The project should hot reload for changes to both JavaScript and CSS.
 The project is tested fairly well.
